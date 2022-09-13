@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name_release">Store Manager</string>
+    <string name="app_name_debug">Store Demo</string>
+
+
+    <!--    Login Strings-->
+    <string name="login_caption">Make it Online,\nHello Matajar.</string>
+    <string name="login_content">The best online shopping experience in UAE, from the house of Matajar Group.</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="login">Login</string>
+
+    <!--    Other Strings-->
+    <string name="retry">Retry</string>
+    <!--    Order Details-->
+    <string name="delivery_address">Delivery Address</string>
+    <string name="payment_type">Payment Type</string>
+    <string name="price_details">Price Details</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="delivery_charges">Delivery Charges</string>
+    <string name="reward_discount">Super Coins Discount</string>
+    <string name="discounts">Discounts</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="ordered">Ordered</string>
+    <string name="delivered">Delivered</string>
+    <string name="special_note">Special Note</string>
+
+    <string name="home">Home</string>
+    <string name="my_orders">My Orders</string>
+    <string name="my_account">My Account</string>
+    <string name="my_coupons">My Coupons</string>
+    <string name="my_notifications">My Notifications</string>
+    <string name="my_rewards">My Rewards</string>
+    <string name="settings">Settings</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="legal">Legal</string>
+    <string name="help_centre">Help Centre</string>
+    <string name="about_us">About Us</string>
+    <string name="chat_with_us">Chat with us</string>
+    <string name="chat_now">Chat now</string>
+    <string name="navigation_drawer_open">drawer_open</string>
+    <string name="navigation_drawer_close">drawer_close</string>
+    <string name="dashboard">My Dashboard</string>
+    <string name="for_android">for android</string>
+    <string name="all_rights_reserved">© All rights reserved</string>
+    <string name="about_us_msg">Matajar and its logo are trademarks of Matajar By Nesto FZE or its affiliates</string>
+    <string name="txt_version">Version : %s</string>
+    <string name="name">Name</string>
+    <string name="store_name">Store Name</string>
+    <string name="tax_registration_number">Tax Registration Number</string>
+    <string name="address">Address</string>
+    <string name="location">Location</string>
+    <string name="manage_addresses">Manage Address</string>
+    <string name="app_feedback">App Feedback]</string>
+    <string name="faq">FAQ</string>
+    <string name="logout">Logout</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="change_password">Change Password</string>
+    <string name="deactivate_account">Deactivate Account</string>
+    <string name="app_settings">App Settings</string>
+    <string name="app_language">App Language</string>
+    <string name="notification_status">Notification Status</string>
+    <string name="sounds">Sounds</string>
+    <string name="enter_your_current_password">Enter your current password</string>
+    <string name="try_otp_verification">Try OTP Verification</string>
+    <string name="confirm">Confirm</string>
+    <string name="we_are_verifying_your_mobile_number">We are verifying your mobile number</string>
+    <string name="try_with_password">Try with password</string>
+    <string name="verify_otp">VERIFY OTP</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset_password_msg">Reset your old password with new one</string>
+    <string name="dialog_title_error_loading_data">Oops! Something went wrong...!</string>
+
+
+    <!--    API Errors-->
+    <string name="dialog_button_cancel">Cancel</string>
+    <string name="dialog_button_retry">Retry</string>
+
+    <!-- Volley Error Messages  -->
+    <string name="volley_server_not_connected">Server is not connected to internet. Kindly try again...</string>
+    <string name="volley_internet_not_active">Your device is not connected to internet. Please try again with an active internet connection.</string>
+    <string name="volley_device_not_connected">Your device is not connected to the internet.</string>
+    <string name="volley_bad_request">That was a bad request. Please try again...</string>
+    <string name="volley_error_parse_data">There was an error parsing data...</string>
+    <string name="volley_device_out_of_memory">Device out of memory</string>
+    <string name="volley_server_authentication_fail">Failed to authenticate user at the server, please contact support.</string>
+    <string name="volley_internal_server_error">Internal server error occurred. Please try again...</string>
+    <string name="volley_connection_time_out">Your connection has timed out. Please try again...</string>
+    <string name="volley_something_bad_occurred">Sorry, some thing weird occurred.</string>
+    <!--////////////////////////-->
+
+    <!-- Notification Timestamp -->
+    <!--////////////////////////-->
+
+    <!-- Validation -->
+    <string name="valid_msg_enter_email">Enter email address</string>
+    <string name="valid_msg_enter_password">Enter password</string>
+    <string name="valid_msg_invalid_password">Invalid password</string>
+    <string name="valid_msg_invalid_email">Invalid email address</string>
+    <!--////////////////////////-->
+
+    <string name="fcm_token">FCM Token: %s</string>
+    <string name="default_notification_channel_id">Channel ID</string>
+    <string name="title_activity_new_order_alert">NewOrderAlertActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="price_denomination">Requested for change</string>
+    <string name="price_variation">Price Variation</string>
+
+</resources>

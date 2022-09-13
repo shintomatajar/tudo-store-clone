@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Order Management.iml" filepath="$PROJECT_DIR$/../Order Management.iml" group="Order Management" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Order Management-app.iml" filepath="$PROJECT_DIR$/.idea/modules/Order Management-app.iml" group="Order Management/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/889022462/Order_Management.iml" filepath="$PROJECT_DIR$/.idea/modules/889022462/Order_Management.iml" group="Order_Management" />
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" group="Order Management/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1706729570/order-management-Order_Management.iml" filepath="$PROJECT_DIR$/.idea/modules/-1706729570/order-management-Order_Management.iml" group="Order_Management" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/order-management-app.iml" filepath="$PROJECT_DIR$/.idea/modules/order-management-app.iml" group="Order Management/app" />
+    </modules>
+  </component>
+</project>

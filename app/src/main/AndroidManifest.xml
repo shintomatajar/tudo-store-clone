@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ae.matajar.store">
+
+<!--    com.tudomart.store-->
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name="ae.tudomart.store.utils.MatajarApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="ae.tudomart.store.ui.activities.StoreOrderAccept" />
+        <activity
+            android:name="ae.tudomart.store.ui.fragments.PickupFromStore"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name="ae.SplashScreenActivity"-->
+<!--            android:exported="true">-->
+<!--        </activity>-->
+        <activity
+            android:name="ae.tudomart.store.ui.activities.SubstitutedProductsListActivity"
+            android:exported="false" />
+        <activity
+            android:name="ae.tudomart.store.ui.activities.ordersubstitute.SearchProductsActivity"
+            android:exported="false" />
+
+        <service android:name="ae.tudomart.store.helpers.network.service.SocketService" />
+
+        <activity android:name="ae.tudomart.store.ui.activities.barcodeGenerator.BarcodeGeneratorActivity" />
+        <activity android:name="ae.tudomart.store.ui.activities.orders.DispatchedListActivity" />
+        <activity android:name="ae.tudomart.store.ui.activities.DispatchedActivity" />
+        <activity android:name="ae.tudomart.store.ui.activities.settings.ResetPasswordActivity" />
+        <activity android:name="ae.tudomart.store.ui.activities.settings.AuthOTPVerification" />
+        <activity android:name="ae.tudomart.store.ui.activities.settings.OTPAuth" />
+        <activity android:name="ae.tudomart.store.ui.activities.settings.PasswordAuth" />
+        <activity android:name="ae.tudomart.store.ui.activities.ProfileActivity" />
+        <activity android:name="ae.tudomart.store.ui.activities.orders.ReadyDispatchListActivity" />
+        <activity android:name="ae.tudomart.store.ui.activities.alert.NewOrderAlertActivity" />
+        <activity android:name="ae.tudomart.store.ui.activities.orders.PackingOrdersActivity" />
+        <activity android:name="ae.tudomart.store.ui.activities.orders.NewOrdersActivity" />
+        <activity android:name="ae.tudomart.store.ui.activities.AllOrdersActivity" />
+        <activity android:name="ae.tudomart.store.ui.activities.settings.SettingsActivity" />
+        <activity android:name="ae.tudomart.store.ui.activities.staticScreens.HelpCentreActivity" />
+        <activity android:name="ae.tudomart.store.ui.activities.staticScreens.AboutUsActivity" />
+        <activity android:name="ae.tudomart.store.ui.activities.PrivacyPolicyActivity" />
+        <activity android:name="ae.tudomart.store.ui.activities.staticScreens.LegalActivity" />
+        <activity android:name="ae.tudomart.store.ui.activities.NotificationsActivity" />
+        <activity android:name="ae.tudomart.store.ui.activities.OrderAcceptActivity" />
+        <activity android:name="ae.tudomart.store.ui.activities.ReadyToDispatchActivity" />
+        <activity android:name="ae.tudomart.store.ui.activities.PackingActivity" />
+        <activity android:name="ae.tudomart.store.ui.activities.dash.DashboardActivity" />
+        <activity
+            android:name="ae.tudomart.store.ui.activities.auth.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+ FirebaseInstanceIdService performs security checks at runtime,
+       no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="ae.tudomart.store.utils.MyFirebaseInstanceIdService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_delivery_truck" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <provider
+            android:authorities="ae.matajar.store.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            android:name="androidx.core.content.FileProvider">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+    </application>
+
+</manifest>

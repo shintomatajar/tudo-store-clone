@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/small_margin">
+        <ImageView
+            android:src="@drawable/ic_error"
+            android:id="@+id/imgCheck"
+            android:layout_width="24dp"
+            android:layout_marginEnd="@dimen/medium_margin"
+            android:layout_height="24dp" />
+
+        <ImageView
+            android:id="@+id/img_product"
+            android:layout_width="@dimen/small_thumb_image"
+            android:layout_height="@dimen/small_thumb_image"
+             />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/large_margin"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_bold"
+                android:maxLines="3"
+                android:text="Product Name"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/txtFrozenFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:background="@drawable/background_cyan_button"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="2dp"
+                android:text="Frozen"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/small_text_size"
+                android:visibility="gone" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txt_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="500 ML x 6 Quantity"
+                android:textSize="@dimen/medium_margin" />
+
+
+            <TextView
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/txt_barcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="barcode"
+                android:textSize="@dimen/medium_margin" />
+
+
+            <TextView
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:id="@+id/txt_product_stock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_bold"
+                android:maxLines="3"
+                android:text="Out of Stock"
+                android:textColor="@color/red" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/quantity_multiple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="x 8"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/large_margin"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AED"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/small_text_size" />
+
+            <TextView
+                android:layout_marginStart="2dp"
+                android:id="@+id/txt_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="30.50"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

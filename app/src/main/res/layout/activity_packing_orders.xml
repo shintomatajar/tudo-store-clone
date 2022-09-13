@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    tools:context="com.matajarbynesto.orders.ae.matajarbynesto.orders.ui.activities.orders.PackingOrdersActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar" />
+
+    <fragment
+        android:id="@+id/fragment_packing"
+        android:name="ae.tudomart.store.ui.fragments.PackingFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        tools:layout="@layout/fragment_packing" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/packingRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="10"
+        tools:listitem="@layout/recycler_my_orders_item" />
+
+    <include
+        android:layout_below="@+id/toolbar"
+        layout="@layout/layout_error"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+
+    <include layout="@layout/layout_loading"
+        android:visibility="gone"/>
+
+</RelativeLayout>

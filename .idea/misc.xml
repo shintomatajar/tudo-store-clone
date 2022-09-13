@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/matajar2/AndroidStudioProjects/matajar-v2-store/app/src/main/res/layout/activity_about_us.xml" value="0.253125" />
+        <entry key="..\:/Users/matajar2/AndroidStudioProjects/matajar-v2-store/app/src/main/res/layout/activity_all_orders.xml" value="0.253125" />
+        <entry key="..\:/Users/matajar2/AndroidStudioProjects/matajar-v2-store/app/src/main/res/layout/activity_auth_o_t_p_verification.xml" value="0.253125" />
+        <entry key="..\:/Users/matajar2/AndroidStudioProjects/matajar-v2-store/app/src/main/res/layout/activity_barcode_generator.xml" value="0.253125" />
+        <entry key="..\:/Users/matajar2/AndroidStudioProjects/matajar-v2-store/app/src/main/res/layout/activity_dashboard.xml" value="0.253125" />
+        <entry key="..\:/Users/matajar2/AndroidStudioProjects/matajar-v2-store/app/src/main/res/layout/activity_dispatched.xml" value="0.264" />
+        <entry key="..\:/Users/matajar2/AndroidStudioProjects/matajar-v2-store/app/src/main/res/layout/activity_packing.xml" value="0.253125" />
+        <entry key="..\:/Users/matajar2/AndroidStudioProjects/matajar-v2-store/app/src/main/res/layout/activity_ready_to_dispatch.xml" value="0.253125" />
+        <entry key="..\:/Users/matajar2/AndroidStudioProjects/matajar-v2-store/app/src/main/res/layout/fragment_new_orders_fragment.xml" value="0.253125" />
+        <entry key="..\:/Users/matajar2/AndroidStudioProjects/matajar-v2-store/app/src/main/res/layout/fragment_order_details.xml" value="0.4" />
+        <entry key="..\:/Users/matajar2/AndroidStudioProjects/matajar-v2-store/app/src/main/res/layout/layout_loading.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/matajar2/AndroidStudioProjects/matajar-v2-store/app/src/main/res/layout/layout_toolbar.xml" value="0.253125" />
+        <entry key="..\:/Users/matajar2/AndroidStudioProjects/matajar-v2-store/app/src/main/res/layout/recycler_order_items.xml" value="0.253125" />
+        <entry key="..\:/Users/matajar2/AndroidStudioProjects/matajar-v2-store/app/src/main/res/layout/recycler_order_packing_items.xml" value="0.253125" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/drawable/background_green_button.xml" value="0.2085" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/drawable/background_light_yellow_tudo_button.xml" value="0.2085" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/drawable/delete_substitute.xml" value="0.245" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/drawable/ic_app_logo.xml" value="0.239" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/drawable/ic_calendar.xml" value="0.1925" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/drawable/ic_circle_blue.xml" value="0.1755" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/drawable/ic_circle_green.xml" value="0.1" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/drawable/ic_contact_us_youtube.xml" value="0.1" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/drawable/ic_filter.xml" value="0.1775" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/drawable/ic_power.xml" value="0.2085" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/drawable/img_contact.xml" value="0.1925" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/drawable/img_error.xml" value="0.1925" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/drawable/img_no_notifications.xml" value="0.1925" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/drawable/img_placeholder.xml" value="0.1925" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/drawable/img_placeholder_wide.xml" value="0.1925" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/drawable/recycler_background.xml" value="0.1925" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/drawable/splash_image.xml" value="0.1925" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/activity_about_us.xml" value="0.4" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/activity_all_orders.xml" value="0.2328125" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/activity_dashboard.xml" value="0.264" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/activity_dispatched.xml" value="0.3604838709677419" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/activity_dispatched_list.xml" value="0.2328125" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/activity_new_orders.xml" value="0.2328125" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/activity_order_accept.xml" value="0.264" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/activity_packing.xml" value="0.23761375126390294" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/activity_packing_orders.xml" value="0.2328125" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/activity_pickup_from_store.xml" value="0.2" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/activity_profile.xml" value="0.2328125" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/activity_ready_dispatch_list.xml" value="0.2328125" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/activity_ready_to_dispatch.xml" value="0.264" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/activity_search_products.xml" value="0.2328125" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/activity_splash_screen.xml" value="0.21458333333333332" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/collect_store_fragment.xml" value="0.2328125" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/fragment_all_orders.xml" value="0.2328125" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/fragment_dashboard.xml" value="0.264" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/fragment_dispatched_list.xml" value="0.2328125" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/fragment_new_orders_fragment.xml" value="0.19375" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/fragment_order_details.xml" value="0.2328125" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/fragment_packing.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/fragment_pickup_from_store.xml" value="0.2328125" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/fragment_search_result.xml" value="0.2328125" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/fragment_slot_selection.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/layout_edit_price_pop_up.xml" value="0.2390625" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/layout_loading.xml" value="0.2328125" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/layout_print_section.xml" value="0.2390625" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/layout_toolbar.xml" value="0.14739583333333334" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/product_list_item_large.xml" value="0.264" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/recycler_collect_my_orders_item.xml" value="0.21458333333333332" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/recycler_my_orders_item.xml" value="0.2328125" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/recycler_order_items.xml" value="0.16510416666666666" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/layout/recycler_order_packing_items.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2425" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/24_07/matajar-v2-store-app/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1515" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/Want To dod clone/matajar-v2-store-app/app/src/main/res/layout/activity_about_us.xml" value="0.23333333333333334" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/Want To dod clone/matajar-v2-store-app/app/src/main/res/layout/activity_all_orders.xml" value="0.23333333333333334" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/Want To dod clone/matajar-v2-store-app/app/src/main/res/layout/activity_auth_o_t_p_verification.xml" value="0.23333333333333334" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/Want To dod clone/matajar-v2-store-app/app/src/main/res/layout/activity_barcode_generator.xml" value="0.23333333333333334" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/Want To dod clone/matajar-v2-store-app/app/src/main/res/layout/activity_dashboard.xml" value="0.23333333333333334" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/Want To dod clone/matajar-v2-store-app/app/src/main/res/layout/activity_dispatched.xml" value="0.23333333333333334" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/Want To dod clone/matajar-v2-store-app/app/src/main/res/layout/activity_help_centre.xml" value="0.4" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/Want To dod clone/matajar-v2-store-app/app/src/main/res/layout/activity_packing.xml" value="0.23333333333333334" />
+        <entry key="..\:/Users/matajar2/OneDrive - Abreco Group/Documents/Want To dod clone/matajar-v2-store-app/app/src/main/res/layout/recycler_order_packing_items.xml" value="0.23645833333333333" />
+        <entry key="app/src/main/res/drawable/dark_gradient.xml" value="0.171" />
+        <entry key="app/src/main/res/drawable/ic_app_logo.xml" value="0.2101851851851852" />
+        <entry key="app/src/main/res/drawable/ic_check.xml" value="0.114" />
+        <entry key="app/src/main/res/drawable/ic_splash_icon.xml" value="0.21774891774891775" />
+        <entry key="app/src/main/res/drawable/splash_image.xml" value="0.21774891774891775" />
+        <entry key="app/src/main/res/layout/activity_about_us.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_categories_activities.xml" value="0.17037037037037037" />
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.20701754385964913" />
+        <entry key="app/src/main/res/layout/activity_dispatched.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.20701754385964913" />
+        <entry key="app/src/main/res/layout/activity_new_order_alert.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_new_orders.xml" value="0.17685185185185184" />
+        <entry key="app/src/main/res/layout/activity_order_accept.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.20701754385964913" />
+        <entry key="app/src/main/res/layout/fragment_search_result.xml" value="0.29791666666666666" />
+        <entry key="app/src/main/res/layout/loader_dialog.xml" value="0.2828125" />
+        <entry key="app/src/main/res/layout/recycler_category_item.xml" value="0.15572916666666667" />
+        <entry key="app/src/main/res/layout/recycler_order_items.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/recycler_order_packing_items.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/selected_recommendable_product.xml" value="0.29791666666666666" />
+        <entry key="app/src/main/res/menu/dashboard_menu.xml" value="0.20701754385964913" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1615" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

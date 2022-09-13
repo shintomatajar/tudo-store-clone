@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#21CA2D</color>
+    <color name="colorPrimaryDark">#21CA2D</color>
+    <color name="colorAccent">#21CA2D</color>
+
+    <color name="green">#00AA00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dark_yellow">#f7941d</color>
+    <color name="red">#FF0000</color>
+    <color name="orange">#F76E08</color>
+
+    <color name="activity_background">#F1F1F1</color>
+
+
+    <color name="lightGray">#D8D8D8</color>
+    <color name="darkGray">#ABABAB</color>
+    <color name="yellow">#EFDF10</color>
+    <color name="skyBlue">#2196F3</color>
+    <color name="packed">#C51162</color>
+    <color name="cancelled">#891B00</color>
+    <color name="black">#000</color>
+    <color name="gray_500">#757575</color>
+    <color name="gray_900">#212121</color>
+    <color name="gray_800">#424242</color>
+    <color name="green_800">#2E7D32</color>
+
+</resources>
