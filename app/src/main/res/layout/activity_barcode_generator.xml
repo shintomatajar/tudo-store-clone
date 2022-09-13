@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_curved_shade_button"
     android:orientation="vertical"
-    tools:context="ae.tudomart.store.ui.activities.barcodeGenerator.BarcodeGeneratorActivity"
+    tools:context=".ui.activities.barcodeGenerator.BarcodeGeneratorActivity"
     tools:ignore="HardcodedText">
 
     <LinearLayout

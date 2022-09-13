@@ -4,8 +4,8 @@
 
 
     <!--    Login Strings-->
-    <string name="login_caption">Make it Online,\nHello Matajar.</string>
-    <string name="login_content">The best online shopping experience in UAE, from the house of Matajar Group.</string>
+    <string name="login_caption">Make it Online,\nHello tudo.</string>
+    <string name="login_content">The best online shopping experience in UAE, from the house of tudo Group.</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="forgot_password">Forgot Password</string>
@@ -44,7 +44,7 @@
     <string name="dashboard">My Dashboard</string>
     <string name="for_android">for android</string>
     <string name="all_rights_reserved">© All rights reserved</string>
-    <string name="about_us_msg">Matajar and its logo are trademarks of Matajar By Nesto FZE or its affiliates</string>
+    <string name="about_us_msg">tudo and its logo are trademarks or its affiliates</string>
     <string name="txt_version">Version : %s</string>
     <string name="name">Name</string>
     <string name="store_name">Store Name</string>

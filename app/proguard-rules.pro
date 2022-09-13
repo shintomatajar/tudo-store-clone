@@ -38,8 +38,8 @@
 
 # Application classes that will be serialized/deserialized over Gson
 -keep class com.matajarbynesto.orders.models.* { *; }
--keep class ae.tudomart.store.helpers.network.RequestController
--keep class ae.tudomart.store.helpers.network.VolleyErrorHandler
+-keep class com.tudomart.store.helpers.network.RequestController
+-keep class com.tudomart.store.helpers.network.VolleyErrorHandler
 # Prevent proguard from stripping interface information from     TypeAdapterFactory,
 # JsonSerializer, JsonDeserializer instances (so they can be used in @JsonAdapter)
 -keep class * implements com.google.gson.TypeAdapterFactory

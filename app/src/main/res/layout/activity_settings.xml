@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/activity_background"
     android:orientation="vertical"
-    tools:context="ae.tudomart.store.ui.activities.settings.SettingsActivity">
+    tools:context=".ui.activities.settings.SettingsActivity">
 
     <include layout="@layout/layout_toolbar" />
 

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:background="@color/activity_background"
     android:layout_height="match_parent"
-    tools:context="ae.tudomart.store.ui.activities.orders.NewOrdersActivity">
+    tools:context=".ui.activities.orders.NewOrdersActivity">
 
     <!--<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/srlDashSwipeRefresh"
@@ -27,7 +27,7 @@
 
     <fragment
         android:id="@+id/framentNewOrders"
-        android:name="ae.tudomart.store.ui.fragments.NewOrdersFragment"
+        android:name="com.tudomart.store.ui.fragments.NewOrdersFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolbar"

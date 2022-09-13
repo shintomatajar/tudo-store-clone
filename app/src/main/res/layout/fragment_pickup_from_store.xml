@@ -7,7 +7,7 @@
     android:background="@color/activity_background"
     android:orientation="vertical"
     android:fillViewport="true"
-    tools:context="ae.tudomart.store.ui.fragments.Pickup_from_store">
+    tools:context=".ui.fragments.Pickup_from_store">
 
     <LinearLayout
         android:layout_width="match_parent"

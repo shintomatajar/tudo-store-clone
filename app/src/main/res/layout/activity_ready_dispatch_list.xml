@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/fragment_ready_to_dispatch"
-        android:name="ae.tudomart.store.ui.fragments.ReadyToDispatchFragment"
+        android:name="com.tudomart.store.ui.fragments.ReadyToDispatchFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolbar"

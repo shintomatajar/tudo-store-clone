@@ -6,7 +6,7 @@
     android:background="@color/activity_background"
     android:layout_height="match_parent"
     android:animateLayoutChanges="true"
-    tools:context="ae.tudomart.store.ui.fragments.OrderDetailsFragment">
+    tools:context=".ui.fragments.OrderDetailsFragment">
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/layoutData"

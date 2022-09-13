@@ -79,7 +79,7 @@
 
 
 
-            <ae.tudomart.store.utils.MatajarRecyclerView
+            <com.tudomart.store.utils.MatajarRecyclerView
                 tools:listitem="@layout/product_list_item_large"
                 android:id="@+id/rvProductList"
                 android:layout_width="match_parent"

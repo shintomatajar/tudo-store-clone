@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ae.tudomart.store.ui.activities.auth.MainActivity">
+    tools:context=".ui.activities.auth.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,7 +30,7 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/ic_app_logo" />
+                        android:src="@drawable/tudo_splashscrren_1" />
 
                     <TextView
                         android:layout_width="match_parent"

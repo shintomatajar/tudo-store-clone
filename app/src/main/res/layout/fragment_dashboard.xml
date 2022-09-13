@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/activity_background"
-    tools:context="ae.tudomart.store.ui.fragments.DashboardFragment">
+    tools:context=".ui.fragments.DashboardFragment">
     <LinearLayout
         android:elevation="@dimen/small_margin"
         android:id="@+id/header"

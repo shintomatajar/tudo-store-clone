@@ -5,7 +5,7 @@
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ae.tudomart.store.ui.activities.dash.DashboardActivity">
+    tools:context=".ui.activities.dash.DashboardActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -53,7 +53,7 @@
 
         <fragment
             android:id="@+id/fragmentA"
-            android:name="ae.tudomart.store.ui.fragments.DashboardFragment"
+            android:name="com.tudomart.store.ui.fragments.DashboardFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/toolbar"

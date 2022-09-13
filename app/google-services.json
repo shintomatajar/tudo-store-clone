@@ -1,345 +1,57 @@
 {
   "project_info": {
-    "project_number": "1061674762693",
-    "firebase_url": "https://matajar-by-nesto.firebaseio.com",
-    "project_id": "matajar-by-nesto",
-    "storage_bucket": "matajar-by-nesto.appspot.com"
+    "project_number": "924739503975",
+    "firebase_url": "https://tudo-mart-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "tudo-mart",
+    "storage_bucket": "tudo-mart.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1061674762693:android:46e568bc3fd373f202cbac",
+        "mobilesdk_app_id": "1:924739503975:android:1d2bcba6bf832fb9c351c2",
         "android_client_info": {
-          "package_name": "ae.matajar.delivery"
+          "package_name": "com.tudomart.customer"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyC1g_pCzOFTw2T5hc9A-ciJs-Z-DjSI4XI"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "1061674762693-2uk76dgpoqm4lslndigil6o75kti3572.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.matajarbynesto.customer"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:1061674762693:android:bd3d76823fc5478d02cbac",
-        "android_client_info": {
-          "package_name": "ae.matajar.delivery.debug"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyC1g_pCzOFTw2T5hc9A-ciJs-Z-DjSI4XI"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "1061674762693-2uk76dgpoqm4lslndigil6o75kti3572.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.matajarbynesto.customer"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:1061674762693:android:42ee817adbdc205d02cbac",
-        "android_client_info": {
-          "package_name": "ae.matajar.store"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyC1g_pCzOFTw2T5hc9A-ciJs-Z-DjSI4XI"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "1061674762693-2uk76dgpoqm4lslndigil6o75kti3572.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.matajarbynesto.customer"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:1061674762693:android:2641c0c3402dceb202cbac",
-        "android_client_info": {
-          "package_name": "ae.matajar.store.debug"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyC1g_pCzOFTw2T5hc9A-ciJs-Z-DjSI4XI"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "1061674762693-2uk76dgpoqm4lslndigil6o75kti3572.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.matajarbynesto.customer"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:1061674762693:android:b6eec05302c523da02cbac",
-        "android_client_info": {
-          "package_name": "com.matajarbynesto.customer"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "1061674762693-skt6kfatv8lhql6kgulvsaqmq9d6sh95.apps.googleusercontent.com",
+          "client_id": "924739503975-d7g1s0q6t2iidk8ccp5os9p36cgfsbtf.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.matajarbynesto.customer",
-            "certificate_hash": "f004ab57605a247f34e6a638ffb56a1405d95950"
+            "package_name": "com.tudomart.customer",
+            "certificate_hash": "2d184e5074da0deb06a079a18227df74786b0c4e"
           }
         },
         {
-          "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyC1g_pCzOFTw2T5hc9A-ciJs-Z-DjSI4XI"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "1061674762693-2uk76dgpoqm4lslndigil6o75kti3572.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.matajarbynesto.customer"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:1061674762693:android:a1c2d42a8550a8ba02cbac",
-        "android_client_info": {
-          "package_name": "com.matajarbynesto.customer.debug"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyC1g_pCzOFTw2T5hc9A-ciJs-Z-DjSI4XI"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "1061674762693-2uk76dgpoqm4lslndigil6o75kti3572.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.matajarbynesto.customer"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:1061674762693:android:521d7e8f4814adeb02cbac",
-        "android_client_info": {
-          "package_name": "com.matajarbynesto.delivery"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyC1g_pCzOFTw2T5hc9A-ciJs-Z-DjSI4XI"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "1061674762693-2uk76dgpoqm4lslndigil6o75kti3572.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.matajarbynesto.customer"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:1061674762693:android:2f7ee0d394de5fd302cbac",
-        "android_client_info": {
-          "package_name": "com.matajarbynesto.department"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyC1g_pCzOFTw2T5hc9A-ciJs-Z-DjSI4XI"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "1061674762693-2uk76dgpoqm4lslndigil6o75kti3572.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.matajarbynesto.customer"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:1061674762693:android:a33d71b09c59ad4302cbac",
-        "android_client_info": {
-          "package_name": "com.matajarbynesto.orders"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "1061674762693-72a3i8b9eo0j0gddp12f2kcrmcuc2tsi.apps.googleusercontent.com",
+          "client_id": "924739503975-r90rh0edo26mt9n9jp6u874pt13hhom1.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.matajarbynesto.orders",
-            "certificate_hash": "f004ab57605a247f34e6a638ffb56a1405d95950"
+            "package_name": "com.tudomart.customer",
+            "certificate_hash": "967b3961a5db1ed29ebea4c76e53adec93104d79"
           }
         },
         {
-          "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
+          "client_id": "924739503975-e47mq8skjuvnqte5gircji73t7417sp3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC1g_pCzOFTw2T5hc9A-ciJs-Z-DjSI4XI"
+          "current_key": "AIzaSyBpd956NI5bezSxSj0OpihC6kx5T7k2pME"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
+              "client_id": "924739503975-e47mq8skjuvnqte5gircji73t7417sp3.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "1061674762693-2uk76dgpoqm4lslndigil6o75kti3572.apps.googleusercontent.com",
+              "client_id": "924739503975-24kgnpsuph2omg3t4bptde82jt7fo0qa.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.matajarbynesto.customer"
+                "bundle_id": "com.tudomart.customer"
               }
             }
           ]
@@ -348,34 +60,34 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1061674762693:android:ca97e09b462b68d002cbac",
+        "mobilesdk_app_id": "1:924739503975:android:98a00a76b1e66971c351c2",
         "android_client_info": {
-          "package_name": "com.matajarbynesto.packing"
+          "package_name": "com.tudomart.customer.debug"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
+          "client_id": "924739503975-e47mq8skjuvnqte5gircji73t7417sp3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC1g_pCzOFTw2T5hc9A-ciJs-Z-DjSI4XI"
+          "current_key": "AIzaSyBpd956NI5bezSxSj0OpihC6kx5T7k2pME"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
+              "client_id": "924739503975-e47mq8skjuvnqte5gircji73t7417sp3.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "1061674762693-2uk76dgpoqm4lslndigil6o75kti3572.apps.googleusercontent.com",
+              "client_id": "924739503975-24kgnpsuph2omg3t4bptde82jt7fo0qa.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.matajarbynesto.customer"
+                "bundle_id": "com.tudomart.customer"
               }
             }
           ]
@@ -384,34 +96,34 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1061674762693:android:cf353c043effbe0e02cbac",
+        "mobilesdk_app_id": "1:924739503975:android:716aa2f7c3a64ee8c351c2",
         "android_client_info": {
-          "package_name": "com.matajarbynesto.picking"
+          "package_name": "com.tudomart.driver"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
+          "client_id": "924739503975-e47mq8skjuvnqte5gircji73t7417sp3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC1g_pCzOFTw2T5hc9A-ciJs-Z-DjSI4XI"
+          "current_key": "AIzaSyBpd956NI5bezSxSj0OpihC6kx5T7k2pME"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
+              "client_id": "924739503975-e47mq8skjuvnqte5gircji73t7417sp3.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "1061674762693-2uk76dgpoqm4lslndigil6o75kti3572.apps.googleusercontent.com",
+              "client_id": "924739503975-24kgnpsuph2omg3t4bptde82jt7fo0qa.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.matajarbynesto.customer"
+                "bundle_id": "com.tudomart.customer"
               }
             }
           ]
@@ -420,34 +132,34 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1061674762693:android:d17aa516f39f0d7302cbac",
+        "mobilesdk_app_id": "1:924739503975:android:212fc885a9459d5cc351c2",
         "android_client_info": {
-          "package_name": "com.matajarbynesto.store"
+          "package_name": "com.tudomart.manager"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
+          "client_id": "924739503975-e47mq8skjuvnqte5gircji73t7417sp3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC1g_pCzOFTw2T5hc9A-ciJs-Z-DjSI4XI"
+          "current_key": "AIzaSyBpd956NI5bezSxSj0OpihC6kx5T7k2pME"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
+              "client_id": "924739503975-e47mq8skjuvnqte5gircji73t7417sp3.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "1061674762693-2uk76dgpoqm4lslndigil6o75kti3572.apps.googleusercontent.com",
+              "client_id": "924739503975-24kgnpsuph2omg3t4bptde82jt7fo0qa.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.matajarbynesto.customer"
+                "bundle_id": "com.tudomart.customer"
               }
             }
           ]
@@ -456,34 +168,70 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1061674762693:android:db87a961ad0309f502cbac",
+        "mobilesdk_app_id": "1:924739503975:android:e1f3ba6fb77f4967c351c2",
         "android_client_info": {
-          "package_name": "com.matajarbynestot.bill"
+          "package_name": "com.tudomart.store"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
+          "client_id": "924739503975-e47mq8skjuvnqte5gircji73t7417sp3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC1g_pCzOFTw2T5hc9A-ciJs-Z-DjSI4XI"
+          "current_key": "AIzaSyBpd956NI5bezSxSj0OpihC6kx5T7k2pME"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1061674762693-r5prbgh8usisasr8amnf5pvq9tdrrkt5.apps.googleusercontent.com",
+              "client_id": "924739503975-e47mq8skjuvnqte5gircji73t7417sp3.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "1061674762693-2uk76dgpoqm4lslndigil6o75kti3572.apps.googleusercontent.com",
+              "client_id": "924739503975-24kgnpsuph2omg3t4bptde82jt7fo0qa.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.matajarbynesto.customer"
+                "bundle_id": "com.tudomart.customer"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924739503975:android:596b7d96162c787bc351c2",
+        "android_client_info": {
+          "package_name": "com.tudomart.store.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "924739503975-e47mq8skjuvnqte5gircji73t7417sp3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpd956NI5bezSxSj0OpihC6kx5T7k2pME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "924739503975-e47mq8skjuvnqte5gircji73t7417sp3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "924739503975-24kgnpsuph2omg3t4bptde82jt7fo0qa.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tudomart.customer"
               }
             }
           ]

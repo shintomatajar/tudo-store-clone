@@ -7,7 +7,7 @@
     android:background="@color/activity_background"
     android:orientation="vertical"
     android:fillViewport="true"
-    tools:context="ae.tudomart.store.ui.fragments.AllOrdersFragment">
+    tools:context=".ui.fragments.AllOrdersFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

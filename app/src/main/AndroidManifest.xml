@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ae.matajar.store">
+    package="com.tudomart.store">
 
+<!--    ae.matajar.store-->
 <!--    com.tudomart.store-->
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -12,7 +13,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
-        android:name="ae.tudomart.store.utils.MatajarApp"
+        android:name="com.tudomart.store.utils.MatajarApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -20,9 +21,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name="ae.tudomart.store.ui.activities.StoreOrderAccept" />
+        <activity android:name=".ui.activities.StoreOrderAccept" />
         <activity
-            android:name="ae.tudomart.store.ui.fragments.PickupFromStore"
+            android:name=".ui.fragments.PickupFromStore"
             android:exported="false" />
 <!--        <activity-->
 <!--            android:name="ae.SplashScreenActivity"-->
@@ -35,33 +36,33 @@
             android:name="ae.tudomart.store.ui.activities.ordersubstitute.SearchProductsActivity"
             android:exported="false" />
 
-        <service android:name="ae.tudomart.store.helpers.network.service.SocketService" />
+        <service android:name=".helpers.network.service.SocketService" />
 
-        <activity android:name="ae.tudomart.store.ui.activities.barcodeGenerator.BarcodeGeneratorActivity" />
-        <activity android:name="ae.tudomart.store.ui.activities.orders.DispatchedListActivity" />
-        <activity android:name="ae.tudomart.store.ui.activities.DispatchedActivity" />
-        <activity android:name="ae.tudomart.store.ui.activities.settings.ResetPasswordActivity" />
-        <activity android:name="ae.tudomart.store.ui.activities.settings.AuthOTPVerification" />
-        <activity android:name="ae.tudomart.store.ui.activities.settings.OTPAuth" />
-        <activity android:name="ae.tudomart.store.ui.activities.settings.PasswordAuth" />
-        <activity android:name="ae.tudomart.store.ui.activities.ProfileActivity" />
-        <activity android:name="ae.tudomart.store.ui.activities.orders.ReadyDispatchListActivity" />
-        <activity android:name="ae.tudomart.store.ui.activities.alert.NewOrderAlertActivity" />
-        <activity android:name="ae.tudomart.store.ui.activities.orders.PackingOrdersActivity" />
-        <activity android:name="ae.tudomart.store.ui.activities.orders.NewOrdersActivity" />
-        <activity android:name="ae.tudomart.store.ui.activities.AllOrdersActivity" />
-        <activity android:name="ae.tudomart.store.ui.activities.settings.SettingsActivity" />
-        <activity android:name="ae.tudomart.store.ui.activities.staticScreens.HelpCentreActivity" />
-        <activity android:name="ae.tudomart.store.ui.activities.staticScreens.AboutUsActivity" />
-        <activity android:name="ae.tudomart.store.ui.activities.PrivacyPolicyActivity" />
-        <activity android:name="ae.tudomart.store.ui.activities.staticScreens.LegalActivity" />
-        <activity android:name="ae.tudomart.store.ui.activities.NotificationsActivity" />
-        <activity android:name="ae.tudomart.store.ui.activities.OrderAcceptActivity" />
-        <activity android:name="ae.tudomart.store.ui.activities.ReadyToDispatchActivity" />
-        <activity android:name="ae.tudomart.store.ui.activities.PackingActivity" />
-        <activity android:name="ae.tudomart.store.ui.activities.dash.DashboardActivity" />
+        <activity android:name=".ui.activities.barcodeGenerator.BarcodeGeneratorActivity" />
+        <activity android:name=".ui.activities.orders.DispatchedListActivity" />
+        <activity android:name=".ui.activities.DispatchedActivity" />
+        <activity android:name=".ui.activities.settings.ResetPasswordActivity" />
+        <activity android:name=".ui.activities.settings.AuthOTPVerification" />
+        <activity android:name=".ui.activities.settings.OTPAuth" />
+        <activity android:name=".ui.activities.settings.PasswordAuth" />
+        <activity android:name=".ui.activities.ProfileActivity" />
+        <activity android:name=".ui.activities.orders.ReadyDispatchListActivity" />
+        <activity android:name=".ui.activities.alert.NewOrderAlertActivity" />
+        <activity android:name=".ui.activities.orders.PackingOrdersActivity" />
+        <activity android:name=".ui.activities.orders.NewOrdersActivity" />
+        <activity android:name=".ui.activities.AllOrdersActivity" />
+        <activity android:name=".ui.activities.settings.SettingsActivity" />
+        <activity android:name=".ui.activities.staticScreens.HelpCentreActivity" />
+        <activity android:name=".ui.activities.staticScreens.AboutUsActivity" />
+        <activity android:name=".ui.activities.PrivacyPolicyActivity" />
+        <activity android:name=".ui.activities.staticScreens.LegalActivity" />
+        <activity android:name=".ui.activities.NotificationsActivity" />
+        <activity android:name=".ui.activities.OrderAcceptActivity" />
+        <activity android:name=".ui.activities.ReadyToDispatchActivity" />
+        <activity android:name=".ui.activities.PackingActivity" />
+        <activity android:name=".ui.activities.dash.DashboardActivity" />
         <activity
-            android:name="ae.tudomart.store.ui.activities.auth.MainActivity"
+            android:name=".ui.activities.auth.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -74,7 +75,7 @@
        no need for explicit permissions despite exported="true"
         -->
         <service
-            android:name="ae.tudomart.store.utils.MyFirebaseInstanceIdService"
+            android:name=".utils.MyFirebaseInstanceIdService"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
