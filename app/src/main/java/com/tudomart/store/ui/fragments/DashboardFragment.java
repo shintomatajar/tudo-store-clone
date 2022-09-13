@@ -410,12 +410,12 @@ public class DashboardFragment extends Fragment {
                 getActivity().startActivity(new Intent(getActivity(), DispatchedListActivity.class));
             }
         });
-//        storeOrderLayout.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                getActivity().startActivity(new Intent(getActivity(), PickupFromStore.class));
-//            }
-//        });
+        storeOrderLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getActivity().startActivity(new Intent(getActivity(), PickupFromStore.class));
+            }
+        });
     }
 
     private void initViews(View view) {

@@ -35,6 +35,14 @@
         <activity
             android:name="com.tudomart.store.ui.activities.ordersubstitute.SearchProductsActivity"
             android:exported="false" />
+        <activity android:name="com.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <service android:name=".helpers.network.service.SocketService" />
 
@@ -64,11 +72,7 @@
         <activity
             android:name=".ui.activities.auth.MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <!--
  FirebaseInstanceIdService performs security checks at runtime,
