@@ -30,7 +30,7 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/tudo_splashscrren_1" />
+                        android:src="@drawable/ic_app_logo" />
 
                     <TextView
                         android:layout_width="match_parent"

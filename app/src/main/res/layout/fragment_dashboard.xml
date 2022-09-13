@@ -425,6 +425,8 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
+
             <androidx.cardview.widget.CardView
 
                 android:layout_width="match_parent"
@@ -437,7 +439,6 @@
                 app:cardElevation="@dimen/small_margin">
 
                 <LinearLayout
-                    android:visibility="gone"
                     android:gravity="center"
                     android:id="@+id/store_order_layout"
                     android:layout_width="match_parent"
