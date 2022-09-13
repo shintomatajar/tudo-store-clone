@@ -25,15 +25,15 @@ import com.tudomart.store.ui.activities.BaseActivity;
 import com.tudomart.store.utils.Utils;
 
 public class HelpCentreActivity extends BaseActivity {
-    String url = "http://www.matajarbynesto.com/";
-    String mail = "care@matajar.ae";
+    String url = "https://tudomart.com";
+    String mail = "onlinesales@tudomart.com";
 
-    String FACEBOOK_URL = "https://fb.com/";
+    String FACEBOOK_URL = "facebook.com/TudomartUAE";
     String WHATSAPP_URL = "https://api.whatsapp.com/send?phone=+971 56 559 4679";
-    String TWITTER_URL = "https://twitter.com/matajar";
-    String YOUTUBE_URL = "https://youtube.com/matajar";
-    String INSTAGRAM_URL = "https://instagram.com/matajar";
-    String PLAYSTORE_URL = "https://play.google.com/store/apps/details?id=ae.matajar.store&hl=en&gl=US";
+    String TWITTER_URL = "https://twitter.com/";
+    String YOUTUBE_URL = "https://youtube.com/";
+    String INSTAGRAM_URL = "https://www.instagram.com/tudo_mart";
+    String PLAYSTORE_URL = "https://play.google.com/store/";
     private ImageView backIcon;
     private TextView titleToolbar;
 
@@ -72,7 +72,7 @@ public class HelpCentreActivity extends BaseActivity {
             @Override
             public void onPermissionGranted(PermissionGrantedResponse permissionGrantedResponse) {
                 Intent callIntent = new Intent(Intent.ACTION_CALL);
-                callIntent.setData(Uri.parse("tel:+971502164297"));
+                callIntent.setData(Uri.parse("tel:+97142645687"));
                 startActivity(callIntent);
             }
 
@@ -133,8 +133,9 @@ public class HelpCentreActivity extends BaseActivity {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(PLAYSTORE_URL));
         startActivity(intent);
     }
+
     @Override
     protected void showAlert(String orderId) {
-        Utils.showNewOrderAlert(this,orderId);
+        Utils.showNewOrderAlert(this, orderId);
     }
 }

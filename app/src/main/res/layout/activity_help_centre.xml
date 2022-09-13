@@ -219,71 +219,6 @@
                             android:layout_marginTop="5dp"
                             android:background="@color/lightGray" />
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginEnd="10dp"
-                            android:clickable="true"
-                            android:foreground="?attr/selectableItemBackground"
-                            android:onClick="startTwitter"
-                            android:padding="5dp">
-
-                            <ImageView
-                                android:layout_width="28dp"
-                                android:layout_height="28dp"
-                                android:layout_gravity="center_vertical"
-                                android:src="@drawable/ic_contact_us_twitter" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_vertical"
-                                android:layout_marginStart="10dp"
-                                android:text="Follow us on Twitter" />
-                        </LinearLayout>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0.5dp"
-                            android:layout_marginTop="5dp"
-                            android:background="@color/lightGray" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginEnd="10dp"
-                            android:clickable="true"
-                            android:foreground="?attr/selectableItemBackground"
-                            android:onClick="startYoutube"
-                            android:padding="5dp">
-
-                            <ImageView
-                                android:layout_width="28dp"
-                                android:layout_height="28dp"
-                                android:layout_gravity="center_vertical"
-                                android:src="@drawable/ic_contact_us_youtube" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_vertical"
-                                android:layout_marginStart="10dp"
-                                android:text="Watch us on Youtube" />
-                        </LinearLayout>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0.5dp"
-                            android:layout_marginTop="5dp"
-                            android:background="@color/lightGray" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -310,39 +245,6 @@
                                 android:layout_gravity="center_vertical"
                                 android:layout_marginStart="10dp"
                                 android:text="Follow us on Instagram" />
-                        </LinearLayout>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0.5dp"
-                            android:layout_marginTop="5dp"
-                            android:background="@color/lightGray" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginEnd="10dp"
-                            android:clickable="true"
-                            android:foreground="?attr/selectableItemBackground"
-                            android:onClick="rateUs"
-                            android:padding="5dp">
-
-                            <ImageView
-                                android:layout_width="28dp"
-                                android:layout_height="28dp"
-                                android:layout_gravity="center_vertical"
-                                android:src="@drawable/ic_playstore" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_vertical"
-                                android:layout_marginStart="10dp"
-                                android:text="Rate us on store" />
                         </LinearLayout>
 
                         <View
