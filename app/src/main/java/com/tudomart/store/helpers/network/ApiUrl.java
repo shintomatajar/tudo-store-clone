@@ -7,8 +7,9 @@ public class ApiUrl {
 //    public static final String SOCKET_BASE_URL = "http://15.184.223.59:5000/";  //test http://15.185.42.68:4000/api/
 //    public static final String SOCKET_BASE_URL = "http://15.185.42.68:4000/"; // test  https://store.tudomart.com/http://15.185.42.68:8000
 //        public static final String SOCKET_BASE_URL = "http://15.185.42.68:5000/"; // test
-    public static final String SOCKET_BASE_URL = "https://store.matajar.ae/";
-    //   public static final String SOCKET_BASE_URL = "https://store.tudomart.com/";
+    //   public static final String SOCKET_BASE_URL = "https://store.matajar.ae/";
+
+    public static final String SOCKET_BASE_URL = "https://store.tudomart.com/";
 
     private static final String NOTIFICATION_PUSH_V2 = SOCKET_BASE_URL + "v2/api/";
 
