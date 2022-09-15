@@ -70,8 +70,7 @@
         <activity android:name=".ui.activities.PackingActivity" />
         <activity android:name=".ui.activities.dash.DashboardActivity" />
         <activity
-            android:name=".ui.activities.auth.MainActivity"
-            android:exported="true">
+            android:name=".ui.activities.auth.MainActivity">
 
         </activity>
         <!--
@@ -100,16 +99,16 @@
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="@string/default_notification_channel_id" />
 
-        <provider
-            android:authorities="ae.matajar.store.fileprovider"
-            android:exported="false"
-            android:grantUriPermissions="true"
-            android:name="androidx.core.content.FileProvider">
+<!--        <provider-->
+<!--            android:authorities="ae.matajar.store.fileprovider"-->
+<!--            android:exported="false"-->
+<!--            android:grantUriPermissions="true"-->
+<!--            android:name="androidx.core.content.FileProvider">-->
 
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_paths"/>
-        </provider>
+<!--            <meta-data-->
+<!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
+<!--                android:resource="@xml/provider_paths"/>-->
+<!--        </provider>-->
 
     </application>
 

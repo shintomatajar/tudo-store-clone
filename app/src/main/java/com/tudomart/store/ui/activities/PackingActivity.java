@@ -253,6 +253,8 @@ public class PackingActivity extends BaseActivity {
                     jsonObj.put("arrayStore", Utils.getStoreJson(new UserSessionManager(PackingActivity.this).getShopIdArray()/* new UserSessionManager(requireActivity()).getUserId()*/));
                     //  jsonObj.put("arrayStore", new UserSessionManager(PackingActivity.this).getShopIdArray());
                     jsonObj.put("strLoginUserId", new UserSessionManager(PackingActivity.this).getUserDetails().get("userid")/*new UserSessionManager(requireActivity()).getUserId()*/);
+                    //          jsonObj.put("arrayStore", new UserSessionManager(PackingActivity.this).getShopIdArray());
+                    //          jsonObj.put("strLoginUserId", new UserSessionManager(PackingActivity.this).getUserDetails().get("userid")/*new UserSessionManager(requireActivity()).getUserId()*/);
                 } catch (JSONException jsonException) {
                     jsonException.printStackTrace();
                 }
@@ -265,6 +267,7 @@ public class PackingActivity extends BaseActivity {
 
                     @Override
                     public void onError(String error) {
+                        Toast.makeText(PackingActivity.this, error.toString() + "  push not send..!", Toast.LENGTH_SHORT).show();
                     }
                 });
             }
@@ -1004,8 +1007,8 @@ public class PackingActivity extends BaseActivity {
             public void onClick(View v) {
                 // mMainButton.setText("Delivered");
                 if (edtInvoice.getText().toString().length() > 0) {
-                        mMainButton.setEnabled(true);
-                        callDispatchOrder();
+                    mMainButton.setEnabled(true);
+                    callDispatchOrder();
 
                 } else {
                     Toast.makeText(getApplicationContext(), "Enter Invoice Number !", Toast.LENGTH_LONG).show();

@@ -20,10 +20,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.marcoscg.dialogsheet.DialogSheet;
-import com.tudomart.store.utils.Utils;
-
 import com.tudomart.store.R;
-
 import com.tudomart.store.helpers.network.ApiUrl;
 import com.tudomart.store.helpers.network.RequestController;
 import com.tudomart.store.helpers.network.VolleyErrorHandler;
@@ -93,7 +90,6 @@ public class DashboardFragment extends Fragment {
         mNewOrdersCount.setStrokeColor("#FF0000");
         mNewOrdersCount.setSolidColor("#FF0000");*/
 
-
         return view;
     }
 
@@ -133,9 +129,9 @@ public class DashboardFragment extends Fragment {
         JSONObject requestBody = new JSONObject();
 
         try {
-
-            // requestBody.put("arrayStore", Utils.getStoreJson(new UserSessionManager(requireActivity()).getShopIdArray()/* new UserSessionManager(requireActivity()).getUserId()*/));
-            requestBody.put("strShopId", new UserSessionManager(requireActivity()).getUserDetails().get("shop")/*/* new UserSessionManager(requireActivity()).getUserId()*/);
+            //     requestBody.put("strShopId", new UserSessionManager(getActivity()).getUserDetails().get("userid")/* new UserSessionManager(requireActivity()).getUserId()*/);
+            //       requestBody.put("arrayStore", Utils.getStoreJson(new UserSessionManager(requireActivity()).getShopIdArray()/* new UserSessionManager(requireActivity()).getUserId()*/));
+            requestBody.put("strShopId", new UserSessionManager(requireActivity()).getUserDetails().get("userid")/*/* new UserSessionManager(requireActivity()).getUserId()*/);
             requestBody.put("strStoreId", new UserSessionManager(requireActivity()).getUserDetails().get("shop")/* new UserSessionManager(requireActivity()).getUserId()*/);
 
         } catch (JSONException e) {
@@ -257,8 +253,9 @@ public class DashboardFragment extends Fragment {
         JSONObject requestBody = new JSONObject();
 
         try {
-            requestBody.put("strShopId", Utils.getStoreJson(new UserSessionManager(requireActivity()).getShopIdArray()/* new UserSessionManager(requireActivity()).getUserId()*/));
-            //  requestBody.put("strShopId", new UserSessionManager(requireContext()).getUserDetails().get("shop"));//* new UserSessionManager(requireActivity()).getUserId()*//*);
+
+            requestBody.put("arrayStore", Utils.getStoreJson(new UserSessionManager(requireContext()).getShopIdArray()));
+            //   requestBody.put("strShopId", new UserSessionManager(requireContext()).getUserDetails().get("userid"));//* new UserSessionManager(requireActivity()).getUserId()*//*);
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -419,7 +416,7 @@ public class DashboardFragment extends Fragment {
     }
 
     private void initViews(View view) {
-        //  storeOrderLayout = view.findViewById(R.id.store_order_layout);
+        storeOrderLayout = view.findViewById(R.id.store_order_layout);
 
         swipeRefreshLayout = view.findViewById(R.id.srlDashSwipeRefresh);
         newOrdersLayout = view.findViewById(R.id.newOrdersLayout);

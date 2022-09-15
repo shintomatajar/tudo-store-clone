@@ -2,7 +2,6 @@ package com.tudomart.store.helpers.network;
 
 public class ApiUrl {
 
-
     //    public static final String SOCKET_BASE_URL = "http://157.175.82.202:5000/";  //test
 //    public static final String SOCKET_BASE_URL = "http://15.184.223.59:5000/";  //test http://15.185.42.68:4000/api/
 //    public static final String SOCKET_BASE_URL = "http://15.185.42.68:4000/"; // test  https://store.tudomart.com/http://15.185.42.68:8000

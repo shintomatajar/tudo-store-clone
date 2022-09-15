@@ -23,18 +23,7 @@ import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.marcoscg.dialogsheet.DialogSheet;
-import com.tudomart.store.helpers.network.service.SocketService;
-import com.tudomart.store.ui.activities.AllOrdersActivity;
-import com.tudomart.store.ui.activities.BaseActivity;
-import com.tudomart.store.ui.activities.NotificationsActivity;
-import com.tudomart.store.ui.activities.PrivacyPolicyActivity;
-import com.tudomart.store.ui.activities.ProfileActivity;
-import com.tudomart.store.ui.activities.auth.MainActivity;
-import com.tudomart.store.ui.customViews.MyDialogSheet;
-import com.tudomart.store.utils.Utils;
-
 import com.tudomart.store.R;
-
 import com.tudomart.store.helpers.network.service.SocketService;
 import com.tudomart.store.helpers.sharedPref.UserSessionManager;
 import com.tudomart.store.ui.activities.AllOrdersActivity;

@@ -19,9 +19,9 @@ class SplashScreenActivity : AppCompatActivity() {
         )
 
         // we used the postDelayed(Runnable, time) method
-        // to send a message with a delayed time.
+        // to send a message with a delayed time. com.tudomart.store.ui.activities.auth.
         Handler().postDelayed({
-            val intent = Intent(applicationContext, com.tudomart.store.ui.activities.auth.MainActivity::class.java)
+            val intent = Intent(applicationContext,MainActivity::class.java)
             startActivity(intent)
             finish()
         }, 3000)

@@ -61,12 +61,12 @@ public class MainActivity extends AppCompatActivity {
 
         initView();
         handleUserSession();
-        if (BuildConfig.DEBUG) {
-//            mEdtPassword.setText("Niffin@123*");
-//            mEdtUsername.setText("niffin@matajar.ae");
-//            mEdtPassword.setText("1234567");
-//            mEdtUsername.setText("aslamAiko@test.com");
-        }
+//        if (BuildConfig.DEBUG) {
+////            mEdtPassword.setText("Niffin@123*");
+////            mEdtUsername.setText("niffin@matajar.ae");
+////            mEdtPassword.setText("1234567");
+////            mEdtUsername.setText("aslamAiko@test.com");
+//        }
     }
 
     private void initView() {
