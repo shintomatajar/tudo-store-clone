@@ -73,10 +73,12 @@ public class PickupFromStore extends BaseActivity implements InterFragmentCommun
             startActivity(new Intent(getApplicationContext(), DispatchedActivity.class).putExtra("ORDER_ID", OrderId)
                     .putExtra("DATE_KEY", timeStamp).putExtra("STATUS", orderStatus));
         }
+
     }
 
     @Override
     public void updateToolbar(int count) {
         titleToolbar.setText("All store orders(" + count + ")");
     }
+
 }

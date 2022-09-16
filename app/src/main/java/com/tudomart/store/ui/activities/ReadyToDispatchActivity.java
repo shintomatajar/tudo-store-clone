@@ -131,6 +131,7 @@ public class ReadyToDispatchActivity extends BaseActivity {
     private CardView splitAmountType;
 
     private TextView txtRewardDiscount;
+    private Button mainBtnStore;
 
 
     String stock = "";
@@ -162,6 +163,8 @@ public class ReadyToDispatchActivity extends BaseActivity {
     }
 
     private void initLayout() {
+
+        mainBtnStore = findViewById(R.id.mainButtonStore);
         txtRewardDiscount = findViewById(R.id.txt_reward_discount);
         splitAmountType = findViewById(R.id.layout_split_amount_type);
 
@@ -251,10 +254,10 @@ public class ReadyToDispatchActivity extends BaseActivity {
     }
 
     private void getData() {
-        for (int i = 0; i < 2; i++) {
-            /*list.add(new ModelOrderItems(DummyData.drinks[0], "3", "30", "Product Name", false));
-            list.add(new ModelOrderItems(DummyData.drinks[0], "3", "30", "Product Name", true));*/
-        }
+//        for (int i = 0; i < 2; i++) {
+//            /*list.add(new ModelOrderItems(DummyData.drinks[0], "3", "30", "Product Name", false));
+//            list.add(new ModelOrderItems(DummyData.drinks[0], "3", "30", "Product Name", true));*/
+//        }
 
 
         loadingLayout.setVisibility(VISIBLE);
@@ -374,8 +377,11 @@ public class ReadyToDispatchActivity extends BaseActivity {
                         if (payment_type.equalsIgnoreCase("Collect from store")) {
                             paymentTypeBool = true;
                             splitAmountType.setVisibility(VISIBLE);
-                            mainButton.setEnabled(true);
-                            mainButton.setText("Delivery");
+                            mainButton.setEnabled(false);
+                            //                  mainButton.setText("Delivery");
+                            mainBtnStore.setVisibility(VISIBLE);
+                        } else {
+                            mainButton.setVisibility(VISIBLE);
                         }
 
                         String sub_total = jsonArray.getJSONObject(0).optString("intSubTotal");
@@ -545,7 +551,6 @@ public class ReadyToDispatchActivity extends BaseActivity {
 
         RequestController.getInstance().addToRequestQueue(clearNotifRequest);
 
-
     }
 
     public void onClickAddInvoiceNumber(final View view) {
@@ -572,6 +577,7 @@ public class ReadyToDispatchActivity extends BaseActivity {
         }
     }
 
+
     public void onClickReadyToDispatch(View view) {
         MyDialogSheet dialog = new MyDialogSheet(ReadyToDispatchActivity.this);
         dialog.setTitle("Change Status");
@@ -579,19 +585,30 @@ public class ReadyToDispatchActivity extends BaseActivity {
         dialog.setPositiveButton("Yes", new DialogSheet.OnPositiveClickListener() {
             @Override
             public void onClick(View v) {
-                //  paymentTypeBool = true;
+
 //                if (edtInvoice.getText().toString().length() > 0 && mTxtCardAmount.getText().toString().length() > 0 && mTxtCashAmount.getText().toString().length() > 0) {
-//                   // mainButton.setEnabled(true);
+//                    mainButton.setEnabled(true);
 //                    callTheStoreApiDispatch();
 //                } else {
 //                    Toast.makeText(getApplicationContext(), "Please Enter Card and Cash field !", Toast.LENGTH_LONG).show();
 //                }
-                if (edtInvoice.getText().toString().length() > 0) {
-                    // mainButton.setEnabled(true);
+                if (paymentTypeBool && mTxtCardAmount.getText().toString().length() > 0 && mTxtCashAmount.getText().toString().length() > 0) {
                     callTheStoreApiDispatch();
+                    mainBtnStore.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            callTheStoreApiDispatch();
+                        }
+                    });
                 } else {
-                    Toast.makeText(getApplicationContext(), "Please Enter Card and Cash field !", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Check payment amount field", Toast.LENGTH_SHORT).show();
                 }
+//                if (edtInvoice.getText().toString().length() > 0) {
+//                    // mainButton.setEnabled(true);
+//                    callTheStoreApiDispatch();
+//                } else {
+//                    Toast.makeText(getApplicationContext(), "Please Enter Card and Cash field !", Toast.LENGTH_LONG).show();
+//                }
 
             }
                /* final P07FancyAlert alert = new P07FancyAlert(PackingActivity.this);
@@ -614,7 +631,6 @@ public class ReadyToDispatchActivity extends BaseActivity {
 
         paidAmount();
         // callSaveInvoiceNumber_second();
-
         final ProgressDialog loginProgress = new ProgressDialog(ReadyToDispatchActivity.this);
         loginProgress.setMessage("Please Wait...");
         loginProgress.setCancelable(false);

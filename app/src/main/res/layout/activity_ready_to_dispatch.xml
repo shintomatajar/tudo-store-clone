@@ -1080,7 +1080,20 @@
             android:background="@color/green"
             android:fontFamily="@font/roboto_bold"
             android:text="Waiting for delivery pick up"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/mainButtonStore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:fontFamily="@font/roboto_bold"
+            android:onClick="onClickReadyToDispatch"
+            android:text="Store Delivered"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
 
         <Button
             android:layout_width="0dp"

@@ -287,12 +287,15 @@ public class DashboardFragment extends Fragment {
                         //SimpleDateFormat formatter = new SimpleDateFormat("dd MMM yy, hh:mm ");
 
                         String allOrders = jsonArray.getJSONObject(4).getString("allOrders");
+                        String storeCount = jsonArray.getJSONObject(5).getString("storeAllOrders");
 
                         mNewOrdersCount.setText(NewOrder);
                         mPackingOrdersCount.setText(packCount);
                         mRtdOrdersCount.setText(readyCount);
                         mDisOrdersCount.setText(DispatchCount);
                         mAllOrdersCount.setText(allOrders);
+                        mAllStoreCount.setText(storeCount);
+
                         //  mTxtReceivedCount.setText(NewOrder);
 
                         //        mAllOrdersCount.setText(allOrders);
@@ -429,7 +432,7 @@ public class DashboardFragment extends Fragment {
         mRtdOrdersCount = view.findViewById(R.id.rtd_orders_count);
         mDisOrdersCount = view.findViewById(R.id.dis_orders_count);
         mAllOrdersCount = view.findViewById(R.id.all_orders_count);
-        //       mAllStoreCount = view.findViewById(R.id.all_store_count);
+        mAllStoreCount = view.findViewById(R.id.all_store_count);
 
         mTxtAvailableCount = view.findViewById(R.id.txt_available_count);
         mTxtReceivedCount = view.findViewById(R.id.txt_received_count);
