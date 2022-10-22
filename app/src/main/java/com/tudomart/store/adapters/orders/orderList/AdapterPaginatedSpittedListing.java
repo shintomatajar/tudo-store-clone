@@ -66,7 +66,6 @@ public class AdapterPaginatedSpittedListing extends
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
 
-
         if (data.get(position)!=null) {
 
             ItemsVH byItemsholder = (ItemsVH) holder;

@@ -245,7 +245,6 @@ public class NewOrdersFragment extends Fragment {
 
     private void initRecyclerView() {
 
-
         final LinearLayoutManager mLayoutManager = (LinearLayoutManager) mNewOrdersRecycler.getLayoutManager();
         mNewOrdersRecycler.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override

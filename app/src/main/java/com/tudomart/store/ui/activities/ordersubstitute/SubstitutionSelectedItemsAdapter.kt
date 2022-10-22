@@ -38,6 +38,7 @@ class SubstitutionSelectedItemsAdapter(
     }
 
     override fun getItemCount() = data.size
+
     fun addItem(item: ModelSubCategoryProductsResponse.Data) {
         if (data.contains(item)) return
         this.data.add(item)

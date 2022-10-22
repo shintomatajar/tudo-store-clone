@@ -18,12 +18,16 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.marcoscg.dialogsheet.DialogSheet;
+import com.tudomart.store.R;
 import com.tudomart.store.helpers.network.ApiUrl;
+import com.tudomart.store.helpers.network.RequestController;
+import com.tudomart.store.helpers.network.VolleyErrorHandler;
+import com.tudomart.store.helpers.sharedPref.UserSessionManager;
 import com.tudomart.store.model.UserSessionDataModel;
+import com.tudomart.store.model.order.TudoStoreNamesModel;
+import com.tudomart.store.ui.activities.dash.DashboardActivity;
 import com.tudomart.store.ui.customViews.MyDialogSheet;
 import com.tudomart.store.utils.Utils;
-import com.tudomart.store.BuildConfig;
-import com.tudomart.store.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -31,15 +35,6 @@ import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import com.tudomart.store.helpers.network.ApiUrl;
-import com.tudomart.store.helpers.network.RequestController;
-import com.tudomart.store.helpers.network.VolleyErrorHandler;
-import com.tudomart.store.helpers.sharedPref.UserSessionManager;
-import com.tudomart.store.model.UserSessionDataModel;
-import com.tudomart.store.ui.activities.dash.DashboardActivity;
-import com.tudomart.store.ui.customViews.MyDialogSheet;
-import com.tudomart.store.utils.Utils;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -162,10 +157,26 @@ public class MainActivity extends AppCompatActivity {
                         JSONArray jsonArray = response.getJSONArray("data");
                         JSONObject userData = jsonArray.getJSONObject(0);
                         JSONArray storeJsonArray = userData.getJSONArray("arr_shops");
+                        JSONArray tudoStoreJsonArray = userData.getJSONArray("array");
                         String[] storeList = new String[storeJsonArray.length()];
                         for (int i = 0; i < storeJsonArray.length(); i++) {
                             storeList[i] = storeJsonArray.getString(i);
                         }
+
+                        JSONObject tudoShopName = tudoStoreJsonArray.getJSONObject(0);
+                        JSONObject tudoShopName1 = tudoStoreJsonArray.getJSONObject(1);
+                        JSONObject tudoShopName2 = tudoStoreJsonArray.getJSONObject(2);
+                        JSONObject tudoShopName3 = tudoStoreJsonArray.getJSONObject(3);
+                        JSONObject tudoShopName4 = tudoStoreJsonArray.getJSONObject(4);
+                        JSONObject tudoShopName5 = tudoStoreJsonArray.getJSONObject(5);
+                        JSONObject tudoShopName6 = tudoStoreJsonArray.getJSONObject(6);
+                        JSONObject tudoShopName7 = tudoStoreJsonArray.getJSONObject(7);
+                        JSONObject tudoShopName8 = tudoStoreJsonArray.getJSONObject(8);
+                        JSONObject tudoShopName9 = tudoStoreJsonArray.getJSONObject(9);
+                        JSONObject tudoShopName10 = tudoStoreJsonArray.getJSONObject(10);
+                        JSONObject tudoShopName11 = tudoStoreJsonArray.getJSONObject(11);
+
+
                         UserSessionDataModel userSessionDataModel = new UserSessionDataModel(
                                 jsonArray.getJSONObject(1).getString("token"),
                                 userData.getString("pkUserId"),
@@ -177,6 +188,22 @@ public class MainActivity extends AppCompatActivity {
 
                         userSessionManager.createUserLoginSession(userSessionDataModel);
                         userSessionManager.checkLogin();
+
+                        TudoStoreNamesModel tudoStoreNamesModel = new TudoStoreNamesModel(
+                                tudoShopName.getString("name"),
+                                tudoShopName1.getString("name"),
+                                tudoShopName2.getString("name"),
+                                tudoShopName3.getString("name"),
+                                tudoShopName4.getString("name"),
+                                tudoShopName5.getString("name"),
+                                tudoShopName6.getString("name"),
+                                tudoShopName7.getString("name"),
+                                tudoShopName8.getString("name"),
+                                tudoShopName9.getString("name"),
+                                tudoShopName10.getString("name"),
+                                tudoShopName11.getString("name")
+                        );
+                        userSessionManager.createTudoStoreNamesSession(tudoStoreNamesModel);
 
                         startActivity(new Intent(getApplicationContext(), DashboardActivity.class));
                         MainActivity.this.finish();

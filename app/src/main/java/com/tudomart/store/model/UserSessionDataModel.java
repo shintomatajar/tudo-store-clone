@@ -3,10 +3,10 @@ package com.tudomart.store.model;
 public class UserSessionDataModel {
 
     String token, userId, firstName, email, phoneNo, shop_id;
-    String[] shopList;
+    String[] shopList, tudoShopList;
 
     public UserSessionDataModel(String token, String userId, String firstName, String email, String phoneNo,
-                                String shop_id,String[] shopList) {
+                                String shop_id, String[] shopList) {
         this.token = token;
         this.userId = userId;
         this.firstName = firstName;
@@ -44,5 +44,6 @@ public class UserSessionDataModel {
     public String[] getShopList() {
         return shopList;
     }
+
 
 }

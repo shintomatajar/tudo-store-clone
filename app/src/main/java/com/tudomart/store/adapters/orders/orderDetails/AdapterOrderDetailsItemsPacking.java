@@ -4,7 +4,6 @@ import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,10 +21,12 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.bumptech.glide.Glide;
+import com.tudomart.store.R;
 import com.tudomart.store.helpers.CircularImageProgress;
 import com.tudomart.store.helpers.network.ApiUrl;
-
-import com.tudomart.store.R;
+import com.tudomart.store.helpers.network.RequestController;
+import com.tudomart.store.helpers.sharedPref.UserSessionManager;
+import com.tudomart.store.model.order.orderDetails.ModelOrderItemsPacking;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -33,12 +34,6 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-
-import com.tudomart.store.helpers.CircularImageProgress;
-import com.tudomart.store.helpers.network.ApiUrl;
-import com.tudomart.store.helpers.network.RequestController;
-import com.tudomart.store.helpers.sharedPref.UserSessionManager;
-import com.tudomart.store.model.order.orderDetails.ModelOrderItemsPacking;
 
 public class AdapterOrderDetailsItemsPacking extends RecyclerView.Adapter<AdapterOrderDetailsItemsPacking.ItemsVH> {
 
@@ -86,13 +81,20 @@ public class AdapterOrderDetailsItemsPacking extends RecyclerView.Adapter<Adapte
                 callback.onSubtituteClick(dataItem);
             }
         });
+        if (dataItem.getFkCartId().equals("substitution") && dataItem.getBlnSubstitute() != null) {
+            holder.substitute_Img.setVisibility(VISIBLE);
+            holder.substitute_Img.setImageDrawable(ContextCompat.getDrawable(holder.itemView.getContext(),R.drawable.jobsvg));
+        } else {
+            holder.substitute_Img.setVisibility(GONE);
+            //  holder.substitute_Img.setImageDrawable(ContextCompat.getDrawable(holder.itemView.getContext(),R.drawable.ic_check));
+        }
         holder.mTxtProductName.setText(dataItem.getItemName());
         holder.mTxtQuantity.setText(dataItem.getItemUnit());
         Glide.with(context).load(dataItem.getImageUrl()).placeholder(new CircularImageProgress().getProgress(context))
                 .error(new CircularImageProgress().getProgress(context)).into(holder.mImgProduct);
         if (dataItem.getBlnCheck().equalsIgnoreCase("true")) {
             dispatchedUi(holder);
-//            holder.mImgCheck.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.ic_check));
+//           holder.mImgCheck.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.ic_check));
         } else {
             readyDispatchUi(holder);
 //            holder.mImgCheck.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.ic_error));
@@ -216,13 +218,15 @@ public class AdapterOrderDetailsItemsPacking extends RecyclerView.Adapter<Adapte
         private TextView btnSubstitute;
         private Button orderDispatchBtn;
         private ImageView deleteSubstituteBtn;
+        private ImageView substitute_Img;
         //  private ProgressBar loading;
 
 
         public ItemsVH(@NonNull View itemView) {
             super(itemView);
+            substitute_Img = itemView.findViewById(R.id.imgSubstitutePrd);
             deleteSubstituteBtn = itemView.findViewById(R.id.deleteSubstitute);
-            //   loading = itemView.findViewById(R.id.loadingProgress);
+            //loading = itemView.findViewById(R.id.loadingProgress);
             mImgCheck = itemView.findViewById(R.id.imgCheck);
             orderDispatchBtn = itemView.findViewById(R.id.mainButton);
             mImgProduct = itemView.findViewById(R.id.img_product);

@@ -15,6 +15,11 @@ public class ModelOrderItemsPacking {
     Boolean isOutOfStock = false;
     String fkSubCategoryId = "";
     Boolean blnSubstitute;
+    String fkCartId;
+
+    public String getFkCartId() {
+        return fkCartId;
+    }
 
     public String getFkSubCategoryId() {
         return fkSubCategoryId;
@@ -125,7 +130,7 @@ public class ModelOrderItemsPacking {
         return orderId;
     }
 
-    public ModelOrderItemsPacking(String imageUrl, String itemQuantity, String itemPrice, String itemName, String itemUnit, Boolean isFrozenFoode, Boolean isItemSelecetd, String barcode, String stock, String blnCheck, String productId, String orderId, String fkSubCategoryId,Boolean blnSubstitute) {
+    public ModelOrderItemsPacking(String imageUrl, String itemQuantity, String itemPrice, String itemName, String itemUnit, Boolean isFrozenFoode, Boolean isItemSelecetd, String barcode, String stock, String blnCheck, String productId, String orderId, String fkSubCategoryId, Boolean blnSubstitute, String fkCartId) {
         this.imageUrl = imageUrl;
         this.itemQuantity = itemQuantity;
         this.itemPrice = itemPrice;
@@ -140,5 +145,6 @@ public class ModelOrderItemsPacking {
         this.orderId = orderId;
         this.fkSubCategoryId = fkSubCategoryId;
         this.blnSubstitute = blnSubstitute;
+        this.fkCartId = fkCartId;
     }
 }

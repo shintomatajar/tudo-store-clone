@@ -18,11 +18,23 @@ fun View.hideKeyboard() {
     inputMethodManager.hideSoftInputFromWindow(windowToken, 0)
 }
 
+//@SuppressLint("ClickableViewAccessibility")
+//fun View.onTap(block: (view: View) -> Boolean) {
+//    val gestureDetector =
+//        GestureDetector(context, object : GestureDetector.SimpleOnGestureListener() {
+//            override fun onSingleTapConfirmed(e: MotionEvent?): Boolean {
+//                return block(this@onTap)
+//            }
+//        })
+//
+//    setOnTouchListener { _, motionEvent -> gestureDetector.onTouchEvent(motionEvent) }
+//}
+
 @SuppressLint("ClickableViewAccessibility")
 fun View.onTap(block: (view: View) -> Boolean) {
     val gestureDetector =
         GestureDetector(context, object : GestureDetector.SimpleOnGestureListener() {
-            override fun onSingleTapConfirmed(e: MotionEvent?): Boolean {
+            override fun onSingleTapConfirmed(e: MotionEvent): Boolean {
                 return block(this@onTap)
             }
         })

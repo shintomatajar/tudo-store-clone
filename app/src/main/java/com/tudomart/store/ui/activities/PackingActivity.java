@@ -3,7 +3,6 @@ package com.tudomart.store.ui.activities;
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
 
-import android.Manifest;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -56,25 +55,23 @@ import com.itextpdf.text.pdf.BaseFont;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.text.pdf.draw.LineSeparator;
 import com.itextpdf.text.pdf.draw.VerticalPositionMark;
-import com.karumi.dexter.Dexter;
-import com.karumi.dexter.PermissionToken;
-import com.karumi.dexter.listener.PermissionDeniedResponse;
-import com.karumi.dexter.listener.PermissionGrantedResponse;
-import com.karumi.dexter.listener.PermissionRequest;
-import com.karumi.dexter.listener.single.PermissionListener;
 import com.marcoscg.dialogsheet.DialogSheet;
+import com.tudomart.store.R;
+import com.tudomart.store.adapters.orders.orderDetails.AdapterOrderDetailsItemsPacking;
 import com.tudomart.store.api.OrderManagementAPI;
 import com.tudomart.store.helpers.EditPriceAlert;
 import com.tudomart.store.helpers.network.ApiUrl;
+import com.tudomart.store.helpers.network.RequestController;
+import com.tudomart.store.helpers.network.VolleyErrorHandler;
+import com.tudomart.store.helpers.sharedPref.UserSessionManager;
+import com.tudomart.store.model.order.orderDetails.ModelOrderItemsPacking;
 import com.tudomart.store.model.order.orderDetails.ModelOrderPriceDetails;
+import com.tudomart.store.ui.activities.dash.DashboardActivity;
+import com.tudomart.store.ui.activities.ordersubstitute.SearchProductsActivity;
 import com.tudomart.store.ui.customViews.MyDialogSheet;
 import com.tudomart.store.ui.customViews.P07FancyAlert;
 import com.tudomart.store.utils.ResponseCallback;
 import com.tudomart.store.utils.Utils;
-
-import com.Comman;
-import com.PdfDocumentAdapter;
-import com.tudomart.store.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -92,25 +89,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
-import java.util.Objects;
 import java.util.TimeZone;
-
-import com.tudomart.store.adapters.orders.orderDetails.AdapterOrderDetailsItemsPacking;
-import com.tudomart.store.api.OrderManagementAPI;
-import com.tudomart.store.helpers.EditPriceAlert;
-import com.tudomart.store.helpers.network.ApiUrl;
-import com.tudomart.store.helpers.network.RequestController;
-import com.tudomart.store.helpers.network.VolleyErrorHandler;
-import com.tudomart.store.helpers.sharedPref.UserSessionManager;
-import com.tudomart.store.model.order.orderDetails.ModelOrderItemsPacking;
-import com.tudomart.store.model.order.orderDetails.ModelOrderPriceDetails;
-import com.tudomart.store.ui.activities.dash.DashboardActivity;
-import com.tudomart.store.ui.activities.ordersubstitute.SearchProductsActivity;
-import com.tudomart.store.ui.customViews.MyDialogSheet;
-import com.tudomart.store.ui.customViews.P07FancyAlert;
-import com.tudomart.store.ui.fragments.DashboardFragment;
-import com.tudomart.store.utils.ResponseCallback;
-import com.tudomart.store.utils.Utils;
 
 public class PackingActivity extends BaseActivity {
     private Button notifyButton;
@@ -163,6 +142,7 @@ public class PackingActivity extends BaseActivity {
     private TextView txtRewardPoints;
     private TextInputEditText mTxtCardAmount;
     private TextInputEditText mTxtCashAmount;
+    private String substituteIcon;
 
     private TextView bTnPrint;
 
@@ -302,8 +282,6 @@ public class PackingActivity extends BaseActivity {
     }
 
     private void addData() {
-
-
        /* for (int i = 0; i < 2; i++) {
             list.add(new ModelOrderItemsPacking(DummyData.drinks[0], "3", "30", "Product Name", false, false));
             list.add(new ModelOrderItemsPacking(DummyData.drinks[0], "3", "30", "Product Name", true, false));
@@ -351,6 +329,8 @@ public class PackingActivity extends BaseActivity {
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
+
+
                             String itemName = jsonArray.getJSONObject(0).getJSONArray("arrayProductDetails").getJSONObject(i).optString("strProductName");
                             String amount = jsonArray.getJSONObject(0).getJSONArray("arrayProductDetails").getJSONObject(i).optString("intTotalAmount");
                             String itemsCount = jsonArray.getJSONObject(0).getJSONArray("arrayProductDetails").getJSONObject(i).optString("intQuantity");
@@ -369,10 +349,19 @@ public class PackingActivity extends BaseActivity {
                                     stock = "Critical Stock : " + String.format("%.0f", Double.parseDouble(jsonArray.getJSONObject(0).getJSONArray("arrayProductDetails").getJSONObject(i).optString("intStockCount")));
                                 }
                             }
+                            String substituteIcon = jsonArray.getJSONObject(0).getJSONArray("arrayProductDetails").getJSONObject(i).optString("fkCartId");
+
+//                            Boolean substitutePop = jsonArray.getJSONObject(0).getJSONArray("arrayProductDetails").getJSONObject(i).has("blnSubstitute");
+//                            if (substituteIcon.equals("substitution")) {
+//                                setSubstitutePopup(itemName);
+//                            } else {
+//
+//                            }
+
                             String barcode = jsonArray.getJSONObject(0).getJSONArray("arrayProductDetails").getJSONObject(i).optString("strBarcode");
+//                            for (int i = 0; i < jsonArray.getJSONObject(0).getJSONArray("arrayProductDetails").length();i++){
 
-
-                            list.add(new ModelOrderItemsPacking(imageUrl, itemsCount, amount, itemName, itemsUnit, frozen_food, false, stock, barcode, blnCheck, productId, order_id, fkSubCategoryId, blnSubstitute));
+                            list.add(new ModelOrderItemsPacking(imageUrl, itemsCount, amount, itemName, itemsUnit, frozen_food, false, stock, barcode, blnCheck, productId, order_id, fkSubCategoryId, blnSubstitute, substituteIcon));
 
                         }
 
@@ -386,6 +375,7 @@ public class PackingActivity extends BaseActivity {
                                 break;
                             }
                         }
+
 
                         if (hide_frozen) {
                             mTextView4.setVisibility(GONE);
@@ -409,9 +399,9 @@ public class PackingActivity extends BaseActivity {
 
                         String total_amount_top = jsonArray.getJSONObject(0).optString("intGrandTotal");
 
-                        //SimpleDateFormat formatter = new SimpleDateFormat("dd MMM yy, hh:mm ");
+                        // SimpleDateFormat formatter = new SimpleDateFormat("dd MMM yy, hh:mm ");
 
-                        //  txtPriceTop.setText(String.format("%.2f", Double.parseDouble(total_amount_top)));
+                        // txtPriceTop.setText(String.format("%.2f", Double.parseDouble(total_amount_top)));
 
                         String Delivery_Address = jsonArray.getJSONObject(0).getJSONArray("arrayAddress").getJSONObject(0).optString("strUserName")
                                 + "\n" +
@@ -644,6 +634,28 @@ public class PackingActivity extends BaseActivity {
             }
         };
         RequestController.getInstance().addToRequestQueue(clearNotifRequest);
+    }
+
+    void setSubstitutePopup(String itemName) {
+        final P07FancyAlert alert = new P07FancyAlert(PackingActivity.this);
+        //   alert.setMessage("Order has been accepted");
+        alert.setMessage(itemName + "is substituted");
+        alert.setButton("Continue", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                alert.dismiss();
+//                               /* startActivity(new Intent(getApplicationContext(), PackingOrdersActivity.class));
+//                                PackingActivity.this.finish();*/
+//                                Intent dashBoardIntent = new Intent(getApplicationContext(), DashboardFragment.class);
+//                                startActivity(dashBoardIntent);
+//                                finish();
+                // startActivity(new Intent(getApplicationContext(), DashboardActivity.class));
+                //  PackingActivity.this.finish();
+            }
+        });
+        alert.setGif(R.raw.animation_success);
+        alert.show();
     }
 
     void deleteSubstituteProducts(ModelOrderItemsPacking dataItem) {

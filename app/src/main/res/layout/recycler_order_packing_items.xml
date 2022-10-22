@@ -145,6 +145,13 @@
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@id/detailLayout">
 
+            <ImageView
+                android:id="@+id/imgSubstitutePrd"
+                android:layout_width="42dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:src="@drawable/substitute" />
+
             <Button
                 android:id="@+id/mainButton"
                 android:layout_width="0dp"

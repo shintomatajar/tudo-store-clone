@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.tudomart.store">
 
-<!--    ae.matajar.store-->
-<!--    com.tudomart.store-->
+    <!--    ae.matajar.store-->
+    <!--    com.tudomart.store-->
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:name="com.tudomart.store.utils.MatajarApp"
@@ -20,22 +22,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
         <activity android:name=".ui.activities.StoreOrderAccept" />
         <activity
             android:name=".ui.fragments.PickupFromStore"
             android:exported="false" />
-<!--        <activity-->
-<!--            android:name="ae.SplashScreenActivity"-->
-<!--            android:exported="true">-->
-<!--        </activity>-->
+        <!--        <activity-->
+        <!--            android:name="ae.SplashScreenActivity"-->
+        <!--            android:exported="true">-->
+        <!--        </activity>-->
         <activity
             android:name="com.tudomart.store.ui.activities.SubstitutedProductsListActivity"
             android:exported="false" />
         <activity
             android:name="com.tudomart.store.ui.activities.ordersubstitute.SearchProductsActivity"
             android:exported="false" />
-        <activity android:name="com.SplashScreenActivity"
+        <activity
+            android:name="com.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -69,8 +73,7 @@
         <activity android:name=".ui.activities.ReadyToDispatchActivity" />
         <activity android:name=".ui.activities.PackingActivity" />
         <activity android:name=".ui.activities.dash.DashboardActivity" />
-        <activity
-            android:name=".ui.activities.auth.MainActivity">
+        <activity android:name=".ui.activities.auth.MainActivity">
 
         </activity>
         <!--
@@ -79,7 +82,8 @@
         -->
         <service
             android:name=".utils.MyFirebaseInstanceIdService"
-            android:exported="true">
+            android:exported="false"
+            android:permission="TODO">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
@@ -99,16 +103,16 @@
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="@string/default_notification_channel_id" />
 
-<!--        <provider-->
-<!--            android:authorities="ae.matajar.store.fileprovider"-->
-<!--            android:exported="false"-->
-<!--            android:grantUriPermissions="true"-->
-<!--            android:name="androidx.core.content.FileProvider">-->
+        <!--        <provider-->
+        <!--            android:authorities="ae.matajar.store.fileprovider"-->
+        <!--            android:exported="false"-->
+        <!--            android:grantUriPermissions="true"-->
+        <!--            android:name="androidx.core.content.FileProvider">-->
 
-<!--            <meta-data-->
-<!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
-<!--                android:resource="@xml/provider_paths"/>-->
-<!--        </provider>-->
+        <!--            <meta-data-->
+        <!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
+        <!--                android:resource="@xml/provider_paths"/>-->
+        <!--        </provider>-->
 
     </application>
 

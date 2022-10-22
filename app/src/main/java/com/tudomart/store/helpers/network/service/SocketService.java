@@ -1,7 +1,5 @@
 package com.tudomart.store.helpers.network.service;
 
-import static com.tudomart.store.helpers.network.ApiUrl.SOCKET_BASE_URL;
-
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -22,18 +20,18 @@ import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.core.app.NotificationCompat;
 
-import com.tudomart.store.helpers.network.ApiUrl;
 import com.tudomart.store.BuildConfig;
 import com.tudomart.store.R;
+import com.tudomart.store.helpers.network.ApiUrl;
+import com.tudomart.store.helpers.network.RequestController;
+import com.tudomart.store.helpers.sharedPref.UserSessionManager;
+import com.tudomart.store.ui.activities.alert.NewOrderAlertActivity;
+import com.tudomart.store.ui.activities.auth.MainActivity;
 
 import org.json.JSONObject;
 
 import java.net.URISyntaxException;
 
-import com.tudomart.store.helpers.network.RequestController;
-import com.tudomart.store.helpers.sharedPref.UserSessionManager;
-import com.tudomart.store.ui.activities.alert.NewOrderAlertActivity;
-import com.tudomart.store.ui.activities.auth.MainActivity;
 import io.socket.client.IO;
 import io.socket.client.Socket;
 import io.socket.engineio.client.transports.WebSocket;

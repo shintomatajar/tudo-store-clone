@@ -1,8 +1,6 @@
 package com.tudomart.store.helpers.network;
 
 
-import static com.tudomart.store.helpers.network.ApiUrl.SOCKET_BASE_URL;
-
 import android.app.Application;
 import android.media.MediaPlayer;
 import android.net.Uri;
@@ -29,7 +27,7 @@ public class RequestController extends Application {
 
     private RequestQueue requestQueue;
     private MediaPlayer mMediaPlayer;
-   // public static String SOCKET_IP = "http://15.185.106.17:5000";
+   //public static String SOCKET_IP = "http://15.185.106.17:5000";
 
     private static RequestController instance;
 
@@ -105,7 +103,6 @@ public class RequestController extends Application {
                 DefaultRetryPolicy.DEFAULT_BACKOFF_MULT
         ));*/
         req.setRetryPolicy(new DefaultRetryPolicy(35000, 0, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
-
 
         getRequestQueue().add(req);
     }
