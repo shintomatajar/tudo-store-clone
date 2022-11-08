@@ -1,5 +1,8 @@
 package com.tudomart.store.ui.activities;
 
+import static android.view.View.GONE;
+import static android.view.View.VISIBLE;
+
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -26,10 +29,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.marcoscg.dialogsheet.DialogSheet;
-import com.tudomart.store.utils.Utils;
-
 import com.tudomart.store.R;
-
 import com.tudomart.store.adapters.orders.orderDetails.AdapterOrderDetailsItems;
 import com.tudomart.store.helpers.network.ApiUrl;
 import com.tudomart.store.helpers.network.RequestController;
@@ -51,9 +51,6 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TimeZone;
-
-import static android.view.View.GONE;
-import static android.view.View.VISIBLE;
 
 public class DispatchedActivity extends BaseActivity {
     private ImageView backIcon;
@@ -78,7 +75,7 @@ public class DispatchedActivity extends BaseActivity {
     private CardView layoutPaymentType;
     private TextView txtSubTotal;
     private TextView txtDeliveryCharge;
-    private TextView txtDiscount;
+    private TextView mTxtDiscount;
     private TextView txtTotalPrice;
     private CardView layoutPaymentInfo;
     private NestedScrollView layoutData;
@@ -116,7 +113,6 @@ public class DispatchedActivity extends BaseActivity {
     private ImageView mAddInvoiceButton;
     private TextView mTxtSubTotal;
     private TextView mTxtDeliveryCharge;
-    private TextView mTxtDiscount;
     private TextView mTxtTotalPrice;
     private CardView mLayoutPaymentInfo;
     private TextView mTxtDeliveryAddress;
@@ -361,7 +357,7 @@ public class DispatchedActivity extends BaseActivity {
 
 
                         String delivery_charges = jsonArray.getJSONObject(0).getString("intDeliveryCharge");
-                        String discounts = "0.00";
+                        String discounts = jsonArray.getJSONObject(0).getString("intDiscount");
                         //SimpleDateFormat formatter = new SimpleDateFormat("dd MMM yy, hh:mm ");
 
                         String total_amount_bottom = jsonArray.getJSONObject(0).getString("intGrandTotal");
@@ -586,7 +582,6 @@ public class DispatchedActivity extends BaseActivity {
         layoutPaymentType = findViewById(R.id.layout_payment_type);
         txtSubTotal = findViewById(R.id.txt_sub_total);
         txtDeliveryCharge = findViewById(R.id.txt_delivery_charge);
-        txtDiscount = findViewById(R.id.txtDiscount);
         txtTotalPrice = findViewById(R.id.txt_total_price);
         layoutPaymentInfo = findViewById(R.id.layout_payment_info);
         layoutData = findViewById(R.id.layoutData);

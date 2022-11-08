@@ -388,7 +388,7 @@ public class ReadyToDispatchActivity extends BaseActivity {
                         //SimpleDateFormat formatter = new SimpleDateFormat("dd MMM yy, hh:mm ");
 
                         String delivery_charges = jsonArray.getJSONObject(0).optString("intDeliveryCharge");
-                        String discounts = "0.00";
+                        String discounts =  jsonArray.getJSONObject(0).getString("intDiscount");;
                         //SimpleDateFormat formatter = new SimpleDateFormat("dd MMM yy, hh:mm ");
 
                         String total_amount_bottom = jsonArray.getJSONObject(0).optString("intGrandTotal");

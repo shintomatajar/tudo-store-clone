@@ -294,9 +294,11 @@ public class OrderAcceptActivity extends BaseActivity {
                         if (promoArray.length() > 0) {
                             JSONObject promoObj = (JSONObject) promoArray.get(0);
                             String promoName = promoObj.optString("strGroupName");
-                            if (!promoName.isEmpty()) {
-                                txtDiscountName.setText("Discounts(" + promoName + ")");
-                            }
+
+                            //Todo: promoName no need for tudo
+//                            if (!promoName.isEmpty()) {
+//                                txtDiscountName.setText("Discounts(" + promoName + ")");
+//                            }
 
                         }
                         //SimpleDateFormat formatter = new SimpleDateFormat("dd MMM yy, hh:mm ");

@@ -433,7 +433,7 @@ public class PackingActivity extends BaseActivity {
                         //SimpleDateFormat formatter = new SimpleDateFormat("dd MMM yy, hh:mm ");
 
                         String delivery_charges = jsonArray.getJSONObject(0).optString("intDeliveryCharge");
-                        String discounts = "0.00";
+                        String discounts =  jsonArray.getJSONObject(0).getString("intDiscount");;
                         //SimpleDateFormat formatter = new SimpleDateFormat("dd MMM yy, hh:mm ");
 
                         String total_amount_bottom = jsonArray.getJSONObject(0).optString("intGrandTotal");
@@ -924,7 +924,6 @@ public class PackingActivity extends BaseActivity {
         mLayoutPaymentType = findViewById(R.id.layout_payment_type);
         mTxtSubTotal = findViewById(R.id.txt_sub_total);
         mTxtDeliveryCharge = findViewById(R.id.txt_delivery_charge);
-        mTxtDiscount = findViewById(R.id.txtDiscount);
         mTxtTotalPrice = findViewById(R.id.txt_total_price);
         mLayoutPaymentInfo = findViewById(R.id.layout_payment_info);
         mLayoutData = findViewById(R.id.layoutData);
